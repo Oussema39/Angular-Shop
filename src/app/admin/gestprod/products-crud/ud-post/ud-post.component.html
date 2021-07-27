@@ -1,0 +1,34 @@
+<h2 mat-dialog-title>Edit or Delete {{data.prod.name}}</h2>
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="form">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput value={{data.prod.name}}>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Categorie Id</mat-label>
+      <input formControlName="catId" matInput value={{data.prod.catId}}>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Prix</mat-label>
+      <input formControlName="prix" matInput value={{data.prod.prix}}>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Img Url</mat-label>
+      <input formControlName="img" matInput value={{data.prod.img}}>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <input formControlName="desc" matInput value={{data.prod.desc}}>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="centre">
+  <button [disabled]="!form.valid" style="background-color: #D9F7FA;" mat-raised-button [mat-dialog-close]="form.value">Save</button>
+  <button mat-raised-button color="warn" mat-dialog-close="delete">Delete</button>
+</mat-dialog-actions>
+

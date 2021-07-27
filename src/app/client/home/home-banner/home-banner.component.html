@@ -1,0 +1,32 @@
+<mat-toolbar id="welcome">
+  <p>Welcome to the largest <b>SHOPPING SHOP ?</b> </p>
+</mat-toolbar>
+<mat-toolbar id="nav-bar">
+  <span id="s-time">𝓢𝓱𝓸𝓹𝓹𝓲𝓷𝓰 𝓣𝓲𝓶𝓮</span>
+  <div class="links">
+    <button (click)="active = true" [class.active]="active" class="link-btn1 link-btn" mat-button >Home</button>
+    <button (click)="active = false" [class.active]="!active" class="link-btn2 link-btn" mat-button >About Us</button>
+
+  </div>
+  <div class="search">
+    <input
+      required *ngIf="!width"
+      type="text" id="search"
+      placeholder="Search Anything ...">
+  </div>
+</mat-toolbar>
+<mat-toolbar id="banner-res" *ngIf="width">
+  <input class="search-res" type="text" id="search" placeholder="Search Anything ...">
+</mat-toolbar>
+<mat-toolbar class="chips">
+
+  <mat-chip-list>
+    <!-- <mat-icon id="left-arrow">arrow_left</mat-icon>
+    <mat-icon id="left-arrow">arrow_right</mat-icon> -->
+    <mat-chip *ngFor="let chip of chips">
+      {{ chip }}
+    </mat-chip>
+
+  </mat-chip-list>
+</mat-toolbar>
+

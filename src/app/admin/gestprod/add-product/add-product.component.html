@@ -1,0 +1,37 @@
+
+<div class="main">
+  <form [formGroup]="form">
+    <h1>Add a Product :</h1>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name">
+      <mat-error>Field <strong>Required</strong> </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline">
+      <mat-label>CategorieId</mat-label>
+      <input matInput formControlName="catId">
+      <mat-error>Field <strong>Required</strong> </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Prix</mat-label>
+      <input type="number" matInput formControlName="prix">
+      <mat-error>Field <strong>Required</strong> </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Image Url</mat-label>
+      <input matInput formControlName="img">
+      <mat-error>Field <strong>Required</strong> </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <input matInput formControlName="desc">
+      <mat-error>Field <strong>Required</strong> </mat-error>
+    </mat-form-field>
+    <br>
+    <button [disabled]="!form.valid" style="background-color: #D9F7FA;" mat-raised-button (click)="submit()">Submit</button>
+
+  </form>
+
+
+</div>

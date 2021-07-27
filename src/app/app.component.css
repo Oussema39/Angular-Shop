@@ -1,0 +1,13 @@
+#client-nav{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  height: 40px;
+  margin: 10px 0;
+}
+button{
+  width: 80px;
+  font-size: medium;
+  color: rgb(108, 224, 54);
+}

@@ -1,0 +1,54 @@
+<!-- <div class="main-content">
+  <div class="header"></div>
+  <div class="main-detail">
+    <div class="side-nav"></div>
+    <div class="product-img">
+      <img src="../../../../assets/imgs/adidass.jpg" alt="">
+      <div class="other-imgs">
+      </div>
+    </div>
+    <div class="product-detail">
+      <h1>Adidas</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet fugiat reprehenderit odio. Deserunt consequatur dicta porro ratione blanditiis sed beatae libero et quia iure, modi impedit earum sint aspernatur vitae.</p>
+      <br><br>
+      <h2>Available Sizes</h2>
+      <mat-chip-list>
+            <mat-chip *ngFor="let size of sizes">
+              {{ size }}
+            </mat-chip>
+          </mat-chip-list>
+    </div>
+  </div>
+  <div class="footer"></div>
+</div> -->
+<div class="main-details">
+  <div class="product-img">
+    <img src={{data._data.img}} width="400" height="300" alt="adidas">
+  </div>
+  <div class="product-desc">
+    <h1>{{data._data.name}}</h1>
+    <p>{{data._data.desc}}</p>
+    <br><br>
+      <h2>Available Sizes</h2>
+      <mat-chip-list>
+            <mat-chip *ngFor="let size of sizes">
+              {{ size }}
+            </mat-chip>
+      </mat-chip-list>
+      <br>
+      <h2>Available Models</h2>
+      <mat-chip-list>
+        <mat-chip *ngFor="let model of models">
+          {{ model }}
+        </mat-chip>
+      </mat-chip-list>
+      <br>
+      <button mat-dialog-close="true" (click)="openSnack()" mat-raised-button >Buy now</button>
+      <br>
+      <div class="counter">
+        <mat-icon (click)="productNumber = productNumber + 1" class="operation">add</mat-icon>
+        <mat-icon (click)="productNumber = productNumber - 1" class="operation right">remove</mat-icon>
+        <input [(ngModel)]="productNumber" id="product-counter" type="text">
+      </div>
+    </div>
+</div>

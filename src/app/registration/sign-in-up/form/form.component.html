@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h1>Register Now</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form >
+    <mat-form-field appearance="legacy" *ngFor="let attr of formAttrs">
+      <mat-label>{{attr}}</mat-label>
+      <input matInput type="text">
+    </mat-form-field>
+  </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Submit</button>
+  </mat-card-actions>
+</mat-card>

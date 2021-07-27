@@ -1,0 +1,8 @@
+button{
+  color: #B79CED;
+  border: .5px solid #B79CED;
+}
+mat-card-content{
+  display: flex;
+  flex-direction: column;
+}

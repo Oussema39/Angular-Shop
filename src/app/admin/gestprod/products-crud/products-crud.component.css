@@ -1,0 +1,12 @@
+table{
+  width: 60%;
+  margin: auto;
+  background: #F0F3F5;
+}
+tr:hover{
+  background:#DAE3E5;
+  cursor:pointer;
+}
+.last:hover{
+  background: #F0F3F5;
+}

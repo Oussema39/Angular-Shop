@@ -1,0 +1,112 @@
+/* .main-content{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 10% auto 10%;
+}
+.header,.footer{
+  background: red;
+}
+
+.main-detail{
+  display: grid;
+  grid-template-columns: 7% 40% auto;
+  position: relative;
+}
+.side-nav{
+  background: green;
+}
+.product-img>img{
+  width: 100%;
+  height: 80%;
+}
+.product-img{
+  background-color: white;
+  position: relative;
+}
+.other-imgs{
+  background-color: #585858;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+.other-imgs>div{
+  background: url('../../../../assets/imgs/adidas.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline;
+  width: 100px;
+  height:100%;
+}
+.product-detail{
+  background: pink;
+  padding: 0 20px;
+  padding-top: 10px;
+}
+p{
+  line-height: 30px;
+  font-size: 18px;
+  color : #eeecec;
+}
+
+mat-chip{
+  cursor: pointer;
+} */
+.main-details{
+  /* padding: 10px; */
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 1fr 1fr;
+}
+p{
+  line-height: 30px;
+  font-size: 18px;
+  color : #585858;
+}
+mat-chip{
+  cursor: pointer;
+}
+h2+div{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+button{
+  width: 200px;
+  background: rgb(17, 209, 90);
+  color: white;
+  box-shadow: 0 20px 20px rgba(67, 224, 128, 0.2), 0px 0px 50px rgba(67, 224, 128, 0.2);
+}
+#product-counter{
+  width: 70px;
+  outline: none;
+  border: 2px solid rgb(17, 209, 90);
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  text-align: center;
+}
+.counter{
+  margin-top: 20px;
+  position: relative;
+  width: auto;
+}
+.operation{
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.operation:hover{
+  background: rgb(187, 176, 176);
+}
+.right{
+  left: 100px;
+}

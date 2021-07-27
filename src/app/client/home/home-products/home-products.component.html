@@ -1,0 +1,39 @@
+<div class="main-home">
+  <div class="side-nav"></div>
+  <div class="products-list">
+      <mat-card data-aos="fade-up"
+     data-aos-duration="1000"
+     data-aos-offset="90"
+     *ngFor="let item of items"
+     class="product-card">
+      <img mat-card-image src={{item.img}} alt="adidas">
+      <mat-card-content>
+        <div class="name-price">
+          <span
+            id="name"
+
+          >{{item.name}}</span>
+          <span class="price">{{item.prix}}</span>
+        </div>
+        <br>
+        <div class="trending">
+          <img src="../../../../assets/svgs/trend.svg" alt="trend">
+          <span>Fashion</span>
+        </div>
+        <br>
+      </mat-card-content>
+      <mat-card-footer>
+        <button (click)="openDialog(item)" id="buy"
+         mat-raised-button
+         matTooltip="Display Details"
+         matTooltipPosition="below"><span>Add To Cart      </span><mat-icon>add_shopping_cart</mat-icon></button>
+      </mat-card-footer>
+    </mat-card>
+    </div>
+  </div>
+  <div class="other-side-nav"></div>
+<div class="no-more" *ngIf="showSpinner" color="accent">
+  <mat-spinner defaultColor="none" color="none" diameter="50" id="spinner"></mat-spinner>
+  <span>Fetching Products ...</span>
+</div>
+

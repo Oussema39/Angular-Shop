@@ -1,0 +1,14 @@
+<app-add-product (e)="addProd($event)"></app-add-product>
+<br>
+<table mat-table [dataSource]="dataSource" multiTemplateDataRows>
+  <ng-container *ngFor="let column of columnsDef" matColumnDef={{column}}>
+    <th mat-header-cell *matHeaderCellDef > {{column | uppercase}} </th>
+    <td #col  mat-cell *matCellDef="let data"> {{data[column]}} </td>
+  </ng-container>
+
+
+  <tr  class="last" mat-header-row *matHeaderRowDef="columnsDef"></tr>
+  <tr (click)="deleteEdit(row)" mat-row *matRowDef="let row; columns: columnsDef;"></tr>
+
+</table>
+

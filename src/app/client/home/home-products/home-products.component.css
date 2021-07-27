@@ -1,0 +1,72 @@
+.main-home{
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  padding: 15px;
+}
+.products-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product-card{
+  border-radius: 25px 25px 0 0;
+  height: auto;
+  width: 180px;
+  box-shadow: 0 20px 20px rgba(67, 224, 128, 0.2), 0px 0px 50px rgba(67, 224, 128, 0.2);
+  margin:0 50px 50px 0;
+}
+.product-card:nth-child(3n+3){
+  margin-right: 0px;
+}
+button#buy{
+  border-radius: 0;
+  width: 100%;
+  background: rgb(17, 209, 90);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 20px 20px rgba(67, 224, 128, 0.2), 0px 0px 50px rgba(67, 224, 128, 0.2);
+}
+.price{
+  font-size: .8rem;
+  color: #585858;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+#name{
+  font-size: 20px;
+  text-decoration: solid;
+}
+.name-price{
+  display: flex;
+  justify-content: space-between;
+}
+.no-more{
+  text-decoration: double;
+  text-align: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+mat-spinner#spinner{
+  margin: 10px auto;
+}
+.no-more ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke:rgb(17, 209, 90);
+}
+.trending{
+  display: flex;
+  align-items: center;
+}
+.trending>img{
+  border-radius: 50%;
+  background : rgb(17, 209, 90);
+}
+div.for-you{
+  display: inline;
+  background: white;
+  width: 325px;
+  height: 100vh;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+

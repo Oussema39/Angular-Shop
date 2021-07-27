@@ -1,0 +1,14 @@
+.main{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.main>*{
+  display: block;
+}
+mat-error{
+  font-size: 15px;
+}
+h1{
+  color: rgb(182, 174, 174);
+}

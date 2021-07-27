@@ -1,0 +1,12 @@
+<app-home-banner (filterEvent)="filter($event)"></app-home-banner>
+<app-home-products [(_number)]="number" (itemAdded)="incItems()"></app-home-products>
+<div matBadgeDisabled="true" [matBadge]="itemsInCart" class="shopping-cart">
+  <mat-icon mat-button [matMenuTriggerFor]="menu" id="shop-icon">shopping_cart</mat-icon>
+</div>
+<mat-menu  #menu="matMenu">
+  <div class="cart-item" mat-menu-item><span>Item one</span><mat-icon>cancel</mat-icon></div>
+  <div class="cart-item" mat-menu-item><span>Item two</span><mat-icon>cancel</mat-icon></div>
+</mat-menu>
+<!-- <div class="main">
+  <app-home-product-detail></app-home-product-detail>
+</div> -->
